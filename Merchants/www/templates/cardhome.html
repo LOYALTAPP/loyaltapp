@@ -1,0 +1,53 @@
+<ion-view class="royal" view-title="Scan Card">
+  <ion-content>
+    <div class="padding" ng-if="cardDetails.email == ''">
+		  <Button class="button button-assertive button-block" ng-click="ScanCard()">Scan</Button>
+	</div>
+    <div class="list" ng-if="cardDetails.email != ''">
+		<center><b>Card Holder Details</b></center>
+		<label class="item item-input">
+			<span class="input-label royal">Name</span>{{cardDetails.name}}
+		</label>
+		<label class="item item-input">
+			<span class="input-label royal">Balance</span><b>{{cardDetails.balance}} points</b>
+		</label>
+		<div class="padding" style="background-color:LightGray">
+		<center>Select Add/Redeem</center>
+		<label class="item item-input">
+			<span class="input-label">Enter Amount : </span>
+			<input type="number" placeholder="Enter Amount" />
+		</label>
+		<hr />
+		<label class="item item-radio">
+			<input type="radio" name="group" checked="checked">
+				<div class="item-content">
+					Add
+				</div>
+				<i class="radio-icon ion-checkmark"></i>
+		</label>
+		<label class="item item-radio">
+			<input type="radio" name="group">
+				<div class="item-content">
+					Redeem
+				</div>
+				<i class="radio-icon ion-checkmark"></i>
+		</label>
+		<Button class="button button-assertive button-block">Calculate Points</Button>
+		<label class="item item-input">
+			<input type="number" placeholder="Points" />
+		</label>
+		<br />
+		<i class="ion-information-circled royal" style="font-size:1.5em" /></i>
+		<!--<div style="display:none">Enter the amount in Rupees to <b>Add/Redeem</b>. Select Add/Redeem and then click on Calculate Points
+		to calculated the points to be Added to or Redeemed from the Users card. Tap on Update to update the card. <br />
+		The amount will be converted into <b>Reward Points</b> and will update the users Card details
+		</div>-->
+		<hr />
+		<div class="button-bar">
+			<Button class="button button-assertive button-block icon-left ion-checkmark">Update</Button>&nbsp;
+			<Button class="button button-assertive button-block icon-left ion-android-cancel" ng-click="Cancel()">Cancel</Button>
+		</div>
+		</div>
+	</div>
+  </ion-content>
+</ion-view>

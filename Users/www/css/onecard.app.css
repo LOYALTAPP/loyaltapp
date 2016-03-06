@@ -1,0 +1,891 @@
+hr {
+    width: 60%;
+    height: 1px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #60616f;
+    color: #60616f;
+    border: 0 none;
+}
+
+.assertive-bg {
+  background-color: #ef4e3a; }
+
+.assertive-border {
+  border-color: #cc2311; }
+
+.balanced, a.balanced {
+  color: #66cc33; }
+
+.balanced-bg {
+  background-color: #66cc33; }
+
+.balanced-border {
+  border-color: #498f24; }
+
+.energized, a.energized {
+  color: #f0b840; }
+
+.energized-bg {
+  background-color: #f0b840; }
+
+.energized-border {
+  border-color: #d39211; }
+
+.royal, a.royal {
+  color: #8a6de9; }
+
+.royal-bg {
+  background-color: #8a6de9; }
+
+.royal-border {
+  border-color: #552bdf; }
+
+.dark, a.dark {
+  color: #444; }
+
+.dark-bg {
+  background-color: #444; }
+
+.dark-border {
+  border-color: #111; }
+
+/**
+ * Platform
+ * --------------------------------------------------
+ * Platform specific tweaks
+ */
+/**
+ * Apply roboto font
+ */
+.roboto {
+  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; }
+  .roboto input {
+    font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; }
+
+/*
+.platform-android {
+
+
+  .bar {
+    padding: 0;
+
+    line-height: 40px;
+
+    .button {
+      line-height: 40px;
+    }
+
+    .button-icon:before {
+      font-size: 24px;
+    }
+  }
+
+  .back-button {
+    &.button-icon:before {
+      line-height: 40px;
+    }
+    margin-left: -3px;
+    padding: 0px 2px !important;
+    &.ion-android-arrow-back:before {
+      font-size: 12px;
+    }
+
+    &.back-button.active,
+    &.back-button.activated {
+      background-color: rgba(0,0,0,0.1);
+    }
+  }
+
+  .item-divider {
+    background: none;
+    border-top-width: 0;
+    border-bottom-width: 2px;
+    text-transform: uppercase;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  .item {
+    border-left-width: 0;
+    border-right-width: 0;
+  }
+
+  .item-divider ~ .item:not(.item-divider) {
+    border-bottom-width: 0;
+  }
+
+  .back-button:not(.ng-hide) + .left-buttons + .title {
+    // Don't allow normal titles in this mode
+    display: none;
+  }
+
+  .bar .title {
+    text-align: left;
+    font-weight: normal;
+  }
+
+  font-family: 'Roboto';
+
+  h1, h2, h3, h4, h5 {
+    font-family: 'Roboto', $font-family-base;
+  }
+
+  .tab-item {
+    font-family: 'Roboto', $font-family-base;
+  }
+
+
+  input, button, select, textarea {
+    font-family: 'Roboto', $font-family-base;
+  }
+  */
+.platform-ios.platform-cordova:not(.fullscreen) .bar-header:not(.bar-subheader) {
+  height: 80px; }
+  .platform-ios.platform-cordova:not(.fullscreen) .bar-header:not(.bar-subheader).item-input-inset .item-input-wrapper {
+    margin-top: 19px !important; }
+  .platform-ios.platform-cordova:not(.fullscreen) .bar-header:not(.bar-subheader) > * {
+    margin-top: 20px; }
+.platform-ios.platform-cordova:not(.fullscreen) .tabs-top > .tabs, .platform-ios.platform-cordova:not(.fullscreen) .tabs.tabs-top {
+  top: 80px; }
+.platform-ios.platform-cordova:not(.fullscreen) .has-header, .platform-ios.platform-cordova:not(.fullscreen) .bar-subheader {
+  top: 80px; }
+.platform-ios.platform-cordova:not(.fullscreen) .has-subheader {
+  top: 140px; }
+.platform-ios.platform-cordova:not(.fullscreen) .has-tabs-top {
+  top: 129px; }
+.platform-ios.platform-cordova:not(.fullscreen) .has-header.has-subheader.has-tabs-top {
+  top: 189px; }
+.platform-ios.platform-cordova.status-bar-hide {
+  margin-bottom: 20px; }
+
+@media (orientation: landscape) {
+  .platform-ios.platform-browser.platform-ipad {
+    position: fixed; } }
+
+.platform-c:not(.enable-transitions) * {
+  -webkit-transition: none !important;
+  transition: none !important; }
+
+/*
+  Variables
+*/
+/*
+  default colors
+*/
+/*
+  button css
+*/
+/*
+  Bars
+*/
+/*
+
+*/
+/*
+
+*/
+/*
+  Center unknown
+*/
+/*
+  background style
+*/
+/*
+  Common css
+*/
+/*
+    should extend ionic .type.scss
+  */
+/*
+  create a mixin for that
+*/
+.content-bg {
+  background-color: #f3f3f3; }
+
+.sidebar-bg {
+  background-color: #383a4c; }
+
+.authorHeader {
+  position: relative;
+  text-align: center;
+  background-color: #ffffff; }
+
+.authorHeader h1 {
+  padding-bottom: 0;
+  font-weight: 400;
+  padding: 0; }
+
+.authorHeader h2 {
+  font-size: 12px;
+  color: #999;
+  margin: 5px 0 0;
+  font-weight: 400; }
+
+.authorBackground {
+  background-color: #000;
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+  height: 93px; }
+
+.authorBackground img {
+  /* -webkit-filter: blur(30px); */
+  -moz-filter: blur(30px);
+  -ms-filter: blur(30px);
+  -o-filter: blur(30px);
+  filter: blur(30px);
+  /* width: 100%; */
+  opacity: 0.5; }
+
+ul.authorConnectIcons {
+  list-style-type: none;
+  margin: 0;
+  padding: 5px 0 0;
+  min-height: 52px; }
+
+ul.authorConnectIcons li {
+  position: relative;
+  display: inline-block;
+  width: 44px;
+  height: 44px;
+  margin: 0;
+  padding: 0;
+  -webkit-background-size: 120px 7348px;
+  background-size: 120px 7348px; }
+
+/*
+.authorIconFacebook {
+  background: url(/build/resources/images/master-sprite-8aa32b3017fdffe090fd2de19c6e65a2.png) no-repeat 0 -6732px;
+}
+
+.authorIconTwitter {
+  background: url(/build/resources/images/master-sprite-8aa32b3017fdffe090fd2de19c6e65a2.png) no-repeat 0 -6820px;
+}
+
+.authorIconWebsite {
+  background: url(/build/resources/images/master-sprite-8aa32b3017fdffe090fd2de19c6e65a2.png) no-repeat 0 -7172px;
+}
+*/
+.author-icon-row {
+  position: relative;
+  margin-top: 3px;
+  margin-bottom: 96px;
+  background-color: #ffffff;
+  width: 100%; }
+
+.author-icon-row span {
+  display: inline-block;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  border: 1px solid #e6e6e6;
+  position: absolute;
+  left: 50%;
+  margin-left: -38px;
+  background-position: center center;
+  background-size: cover; }
+
+.centerBlock {
+  margin: 0 auto;
+  max-width: 1024px; }
+
+/*
+  Components
+
+  extending components from ionic.app.scss
+*/
+.button.button-transparent, .button-transparent.button, .button.button-signin, .button.button-twitter, .button.button-facebook, .button.button-google, .button.button-green, .button.button-red, .button.button-blue, .button.button-signin, .button-signin.button, .button.button-twitter, .button-twitter.button, .button.button-facebook, .button-facebook.button, .button.button-google, .button-google.button, .button.button-green, .button-green.button, .button.button-red, .button-red.button, .button.button-blue, .button-blue.button {
+  border-color: transparent;
+  background-color: transparent;
+  color: #fff;
+  padding: 3px 12px;
+  background-image: url('../img/button-transparent-bg.png'); }
+  .button.button-transparent:hover, .button-transparent.button:hover, .button.button-signin:hover, .button.button-twitter:hover, .button.button-facebook:hover, .button.button-google:hover, .button.button-green:hover, .button.button-red:hover, .button.button-blue:hover, .button.button-signin:hover, .button-signin.button:hover, .button.button-twitter:hover, .button-twitter.button:hover, .button.button-facebook:hover, .button-facebook.button:hover, .button.button-google:hover, .button-google.button:hover, .button.button-green:hover, .button-green.button:hover, .button.button-red:hover, .button-red.button:hover, .button.button-blue:hover, .button-blue.button:hover {
+    color: #fff;
+    text-decoration: none; }
+  .button.button-transparent.active, .button-transparent.active.button, .active.button.button-signin, .active.button.button-twitter, .active.button.button-facebook, .active.button.button-google, .active.button.button-green, .active.button.button-red, .active.button.button-blue, .button.active.button-signin, .active.button-signin.button, .button.active.button-twitter, .active.button-twitter.button, .button.active.button-facebook, .active.button-facebook.button, .button.active.button-google, .active.button-google.button, .button.active.button-green, .active.button-green.button, .button.active.button-red, .active.button-red.button, .button.active.button-blue, .active.button-blue.button, .button.button-transparent.activated, .button-transparent.activated.button, .activated.button.button-signin, .activated.button.button-twitter, .activated.button.button-facebook, .activated.button.button-google, .activated.button.button-green, .activated.button.button-red, .activated.button.button-blue, .button.activated.button-signin, .activated.button-signin.button, .button.activated.button-twitter, .activated.button-twitter.button, .button.activated.button-facebook, .activated.button-facebook.button, .button.activated.button-google, .activated.button-google.button, .button.activated.button-green, .activated.button-green.button, .button.activated.button-red, .activated.button-red.button, .button.activated.button-blue, .activated.button-blue.button {
+    border-color: transparent;
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.15); }
+  .button.button-transparent.button-clear, .button-transparent.button-clear.button, .button-clear.button.button-signin, .button-clear.button.button-twitter, .button-clear.button.button-facebook, .button-clear.button.button-google, .button-clear.button.button-green, .button-clear.button.button-red, .button-clear.button.button-blue, .button.button-clear.button-signin, .button-clear.button-signin.button, .button.button-clear.button-twitter, .button-clear.button-twitter.button, .button.button-clear.button-facebook, .button-clear.button-facebook.button, .button.button-clear.button-google, .button-clear.button-google.button, .button.button-clear.button-green, .button-clear.button-green.button, .button.button-clear.button-red, .button-clear.button-red.button, .button.button-clear.button-blue, .button-clear.button-blue.button {
+    border-color: transparent;
+    background: none;
+    box-shadow: none;
+    color: transparent; }
+  .button.button-transparent.button-icon, .button-transparent.button-icon.button, .button-icon.button.button-signin, .button-icon.button.button-twitter, .button-icon.button.button-facebook, .button-icon.button.button-google, .button-icon.button.button-green, .button-icon.button.button-red, .button-icon.button.button-blue, .button.button-icon.button-signin, .button-icon.button-signin.button, .button.button-icon.button-twitter, .button-icon.button-twitter.button, .button.button-icon.button-facebook, .button-icon.button-facebook.button, .button.button-icon.button-google, .button-icon.button-google.button, .button.button-icon.button-green, .button-icon.button-green.button, .button.button-icon.button-red, .button-icon.button-red.button, .button.button-icon.button-blue, .button-icon.button-blue.button {
+    border-color: transparent;
+    background: none; }
+  .button.button-transparent.button-outline, .button-transparent.button-outline.button, .button-outline.button.button-signin, .button-outline.button.button-twitter, .button-outline.button.button-facebook, .button-outline.button.button-google, .button-outline.button.button-green, .button-outline.button.button-red, .button-outline.button.button-blue, .button.button-outline.button-signin, .button-outline.button-signin.button, .button.button-outline.button-twitter, .button-outline.button-twitter.button, .button.button-outline.button-facebook, .button-outline.button-facebook.button, .button.button-outline.button-google, .button-outline.button-google.button, .button.button-outline.button-green, .button-outline.button-green.button, .button.button-outline.button-red, .button-outline.button-red.button, .button.button-outline.button-blue, .button-outline.button-blue.button {
+    border-color: transparent;
+    background: transparent;
+    color: transparent; }
+    .button.button-transparent.button-outline.active, .button-transparent.button-outline.active.button, .button-outline.active.button.button-signin, .button-outline.active.button.button-twitter, .button-outline.active.button.button-facebook, .button-outline.active.button.button-google, .button-outline.active.button.button-green, .button-outline.active.button.button-red, .button-outline.active.button.button-blue, .button.button-outline.active.button-signin, .button-outline.active.button-signin.button, .button.button-outline.active.button-twitter, .button-outline.active.button-twitter.button, .button.button-outline.active.button-facebook, .button-outline.active.button-facebook.button, .button.button-outline.active.button-google, .button-outline.active.button-google.button, .button.button-outline.active.button-green, .button-outline.active.button-green.button, .button.button-outline.active.button-red, .button-outline.active.button-red.button, .button.button-outline.active.button-blue, .button-outline.active.button-blue.button, .button.button-transparent.button-outline.activated, .button-transparent.button-outline.activated.button, .button-outline.activated.button.button-signin, .button-outline.activated.button.button-twitter, .button-outline.activated.button.button-facebook, .button-outline.activated.button.button-google, .button-outline.activated.button.button-green, .button-outline.activated.button.button-red, .button-outline.activated.button.button-blue, .button.button-outline.activated.button-signin, .button-outline.activated.button-signin.button, .button.button-outline.activated.button-twitter, .button-outline.activated.button-twitter.button, .button.button-outline.activated.button-facebook, .button-outline.activated.button-facebook.button, .button.button-outline.activated.button-google, .button-outline.activated.button-google.button, .button.button-outline.activated.button-green, .button-outline.activated.button-green.button, .button.button-outline.activated.button-red, .button-outline.activated.button-red.button, .button.button-outline.activated.button-blue, .button-outline.activated.button-blue.button {
+      background-color: transparent;
+      box-shadow: none;
+      color: #fff; }
+.button.button-signin, .button-signin.button {
+  background: -moz-linear-gradient(left, #0185a2 0, #66c2c8 90%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%, #0185a2), color-stop(90%, #66c2c8));
+  background: -webkit-linear-gradient(left, #0185a2 0, #66c2c8 90%);
+  background: -o-linear-gradient(left, #0185a2 0, #66c2c8 90%);
+  background: linear-gradient(to right, #0185a2 0, #66c2c8 90%);
+  border-color: transparent;
+  background-color: transparent;
+  color: #fff; }
+  .button.button-signin:hover, .button-signin.button:hover {
+    color: #fff;
+    text-decoration: none; }
+  .button.button-signin.active, .button-signin.active.button, .button.button-signin.activated, .button-signin.activated.button {
+    border-color: transparent;
+    background-color: #01758f;
+    box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.15); }
+  .button.button-signin.activated, .button-signin.activated.button {
+    background: #01758f; }
+.button.button-twitter, .button-twitter.button {
+  border-color: transparent;
+  background-color: #55acee;
+  color: #fff;
+  background-image: none; }
+  .button.button-twitter:hover, .button-twitter.button:hover {
+    color: #fff;
+    text-decoration: none; }
+  .button.button-twitter.active, .button-twitter.active.button, .button.button-twitter.activated, .button-twitter.activated.button {
+    border-color: transparent;
+    background-color: #319bea;
+    box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.15); }
+.button.button-facebook, .button-facebook.button {
+  border-color: transparent;
+  background-color: #375a9a;
+  color: #fff;
+  background-image: none; }
+  .button.button-facebook:hover, .button-facebook.button:hover {
+    color: #fff;
+    text-decoration: none; }
+  .button.button-facebook.active, .button-facebook.active.button, .button.button-facebook.activated, .button-facebook.activated.button {
+    border-color: transparent;
+    background-color: #2a4670;
+    box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.15); }
+.button.button-google, .button-google.button {
+  border-color: transparent;
+  background-color: #e3432e;
+  color: #fff;
+  background-image: none; }
+  .button.button-google:hover, .button-google.button:hover {
+    color: #fff;
+    text-decoration: none; }
+  .button.button-google.active, .button-google.active.button, .button.button-google.activated, .button-google.activated.button {
+    border-color: transparent;
+    background-color: #b53721;
+    box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.15); }
+.button.button-green, .button-green.button {
+  border-color: transparent;
+  background-color: #88c057;
+  color: #fff;
+  background-image: none;
+  /*#648f3f*/ }
+  .button.button-green:hover, .button-green.button:hover {
+    color: #fff;
+    text-decoration: none; }
+  .button.button-green.active, .button-green.active.button, .button.button-green.activated, .button-green.activated.button {
+    border-color: transparent;
+    background-color: lime;
+    box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.15); }
+.button.button-red, .button-red.button {
+  border-color: transparent;
+  background-color: #dc6263;
+  color: #fff;
+  background-image: none; }
+  .button.button-red:hover, .button-red.button:hover {
+    color: #fff;
+    text-decoration: none; }
+  .button.button-red.active, .button-red.active.button, .button.button-red.activated, .button-red.activated.button {
+    border-color: transparent;
+    background-color: red;
+    box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.15); }
+.button.button-blue, .button-blue.button {
+  border-color: transparent;
+  background-color: rgba(25, 213, 206, 0.5);
+  color: #fff;
+  background-image: none; }
+  .button.button-blue:hover, .button-blue.button:hover {
+    color: #fff;
+    text-decoration: none; }
+  .button.button-blue.active, .button-blue.active.button, .button.button-blue.activated, .button-blue.activated.button {
+    border-color: transparent;
+    background-color: #02c7c0;
+    box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.15); }
+
+.bar {
+  color: #fff; }
+  .bar.bar-light-opacity, .bar-light-opacity.bar {
+    /*
+      @include bar-style(#000, $bar-light-border, $bar-light-text);
+    */
+    background: none;
+    border-width: 0px; }
+  .bar.bar-blue, .bar-blue.bar {
+    background: #0185a2;
+    border-width: 0px; }
+  .bar.bar-dark-ui, .bar-dark-ui.bar {
+    background: #383a4c;
+    border-width: 0px; }
+    .bar.bar-dark-ui .title, .bar.bar-dark-ui .bar-dark-ui.bar {
+      color: #ffffff; }
+    .bar.bar-dark-ui .button.button-icon, .bar.bar-dark-ui .bar-dark-ui.bar, .bar.bar-dark-ui .button-icon.button, .bar.bar-dark-ui .button.back-button, .bar.bar-dark-ui .bar-dark-ui.bar, .bar.bar-dark-ui .back-button.button {
+      color: #ffffff; }
+  .bar .title, .bar .bar {
+    /*height: 60px;
+    line-height: 60px;*/
+    font-size: 20px;
+    color: #49799a; }
+  .bar .button.button-icon, .bar .bar, .bar .button-icon.button, .bar .button.back-button, .bar .bar, .bar .back-button.button {
+    color: #FFF; }
+  .bar .buttons.left-buttons button, .bar .buttons.left-buttons .bar {
+    top: -5px;
+    left: -5px;
+    height: 60px;
+    border-radius: 0px;
+    width: 60px; }
+    .bar .buttons.left-buttons button.button-cancel:after, .bar .buttons.left-buttons .bar {
+      content: "";
+      background: url('../img/x-mark.png');
+      width: 20px;
+      height: 20px;
+      display: block;
+      background-repeat: no-repeat;
+      top: 16px;
+      position: absolute;
+      background-position: center;
+      margin: 0 0 0 9%;
+      background-size: contain;
+      left: 13px; }
+  .bar .buttons.right-buttons button, .bar .buttons.right-buttons .bar {
+    top: -5px;
+    right: -5px;
+    height: 60px;
+    border-radius: 0px;
+    width: 60px; }
+    .bar .buttons.right-buttons button.button-save:after, .bar .buttons.right-buttons .bar {
+      content: "";
+      background: url('../img/check-mark.png');
+      width: 20px;
+      height: 20px;
+      display: block;
+      background-repeat: no-repeat;
+      top: 16px;
+      position: absolute;
+      background-position: center;
+      margin: 0 0 0 9%;
+      background-size: contain;
+      left: 16px; }
+
+/*
+  Sidebar
+*/
+.custom-menu-item {
+  width: 100%;
+  margin: 0 auto;
+  background: transparent;
+  border: transparent;
+  letter-spacing: 0.25px;
+  text-align: center;
+  font-size: 16px; }
+  .custom-menu-item.profile-item {
+    background: #424458;
+    position: relative;
+    text-align: center;
+    border: none; }
+    .custom-menu-item.profile-item .author-info h1 {
+      font-size: 16px;
+      color: #fff;
+      letter-spacing: 1px; }
+  .custom-menu-item.settings-item:after {
+    content: "";
+    background: url('../img/settings-icon.png');
+    width: 14px;
+    height: 14px;
+    display: block;
+    background-repeat: no-repeat;
+    top: 50%;
+    position: absolute;
+    background-position: center;
+    margin: -7px 0 0 25%;
+    background-size: contain; }
+  .custom-menu-item.messages-item:after {
+    content: "";
+    background: url('../img/messages-icon.png');
+    width: 14px;
+    height: 14px;
+    display: block;
+    background-repeat: no-repeat;
+    top: 50%;
+    position: absolute;
+    background-position: center;
+    margin: -7px 0 0 25%;
+    background-size: contain; }
+  .custom-menu-item.users-item:after {
+    content: "";
+    background: url('../img/group_user-icon.png');
+    width: 25px;
+    height: 25px;
+    display: block;
+    background-repeat: no-repeat;
+    top: 50%;
+    position: absolute;
+    background-position: center;
+    margin: -13px 0 0 25%;
+    background-size: contain; }
+  .custom-menu-item.threads-item:after {
+    content: "";
+    background: url('../img/group.png');
+    width: 14px;
+    height: 14px;
+    display: block;
+    background-repeat: no-repeat;
+    top: 50%;
+    position: absolute;
+    background-position: center;
+    margin: -7px 0 0 25%;
+    background-size: contain; }
+  .custom-menu-item .item-content {
+    padding: 20px 15px 20px 15px;
+    background-color: transparent;
+    color: #fff; }
+    .custom-menu-item .item-content.activated {
+      background: rgba(0, 0, 0, 0.5); }
+
+.menu-logout {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  color: #fff;
+  height: 80px; }
+  .menu-logout:after {
+    content: "";
+    background: url('../img/logout-icon.png');
+    width: 14px;
+    height: 14px;
+    display: block;
+    background-repeat: no-repeat;
+    top: 50%;
+    position: absolute;
+    background-position: center;
+    margin: -7px 0 0 25%;
+    background-size: contain; }
+  .menu-logout .item-content {
+    margin: 0 auto;
+    background: #ed7161;
+    height: 100%; }
+
+/*
+  main css
+*/
+.main-page {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #ffffff;
+  text-align: center; }
+  .main-page .slogan {
+    color: #556a78;
+    font-weight: 400;
+    line-height: 21px;
+    margin: 50px auto;
+    font-size: 15px;
+    width: 88%;
+    letter-spacing: 0.25px; }
+  .main-page.home-bg {
+    background: #383a4c; }
+  .main-page .logo {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: transparent;
+    background-image: url('../img/a_logo.png');
+    width: 30%;
+    height: 20%;
+    margin: 25% auto 25px auto;
+    position: relative;
+    z-index: 2; }
+  .main-page .slogan {
+    font-size: 16px;
+    color: #ffffff;
+    position: relative;
+    z-index: 2; }
+  .main-page .pseudo-link {
+    color: white;
+    font-size: 15px;
+    text-decoration: none; }
+  .main-page .button, .main-page .button {
+    width: 88%;
+    height: 56px;
+    margin: 10px auto;
+    position: relative;
+    padding: 0;
+    background-position: cover;
+    text-transform: uppercase;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    z-index: 2; }
+
+/*
+  splash
+*/
+/*
+  login
+*/
+.main-login-page, .signup-page {
+  text-align: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #383a4c; }
+  .main-login-page .slogan, .signup-page .slogan {
+    color: #556a78;
+    font-weight: 400;
+    line-height: 21px;
+    margin: 50px auto;
+    font-size: 15px;
+    width: 88%;
+    letter-spacing: 0.25px; }
+  .main-login-page .logo, .signup-page .logo {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: transparent;
+    background-image: url('../img/logo.png');
+    width: 25%;
+    height: 15%;
+    margin: 25% auto 25px auto; }
+  .main-login-page .pseudo-link, .signup-page .pseudo-link {
+    color: #0185a2;
+    font-size: 15px;
+    text-decoration: none; }
+  .main-login-page .list, .signup-page .list {
+    width: 88%;
+    margin: 20% auto 30px auto; }
+    .main-login-page .list label.lock:after, .signup-page .list label.lock:after {
+      content: "";
+      background: url('../img/lock_darkui.png');
+      width: 22px;
+      height: 22px;
+      display: block;
+      background-repeat: no-repeat;
+      top: 14px;
+      /*position: absolute;*/
+      background-position: center;
+      margin: 0 0 0 9%;
+      background-size: contain;
+      left: -22px; }
+    .main-login-page .list label.username:after, .signup-page .list label.username:after {
+      content: "";
+      background: url('../img/user_darkui.png');
+      width: 20px;
+      height: 20px;
+      display: block;
+      background-repeat: no-repeat;
+      top: 14px;
+      /*position: absolute;*/
+      background-position: center;
+      margin: 0 0 0 9%;
+      background-size: contain;
+      left: -22px; }
+    .main-login-page .list label.email:after, .signup-page .list label.email:after {
+      content: "";
+      background: url('../img/email_darkui.png');
+      width: 20px;
+      height: 20px;
+      display: block;
+      background-repeat: no-repeat;
+      top: 14px;
+      /*position: absolute;*/
+      background-position: center;
+      margin: 0 0 0 9%;
+      background-size: contain;
+      left: -22px; }
+    .main-login-page .list label.item-input, .signup-page .list label.item-input {
+      padding: 10px 0 4px 45px;
+      background: transparent;
+      border-width: 0 0 1px 0;
+      border-style: solid;
+      border-color: #606170; }
+      .main-login-page .list label.item-input ::-webkit-input-placeholder, .signup-page .list label.item-input ::-webkit-input-placeholder {
+        color: #acadb5; }
+      .main-login-page .list label.item-input :-moz-placeholder, .signup-page .list label.item-input :-moz-placeholder {
+        /* Firefox 18- */
+        color: #acadb5; }
+      .main-login-page .list label.item-input ::-moz-placeholder, .signup-page .list label.item-input ::-moz-placeholder {
+        /* Firefox 19+ */
+        color: #acadb5; }
+      .main-login-page .list label.item-input :-ms-input-placeholder, .signup-page .list label.item-input :-ms-input-placeholder {
+        color: #acadb5; }
+      .main-login-page .list label.item-input input[type="text"], .main-login-page .list label.item-input input[type="password"], .signup-page .list label.item-input input[type="text"], .signup-page .list label.item-input input[type="password"] {
+        font-size: 16px;
+        color: #fff;
+        letter-spacing: 0.5px; }
+  .main-login-page .button, .main-login-page .button, .signup-page .button, .signup-page .button {
+    width: 88%;
+    /*height: 56px;*/
+    margin: 5px auto;
+    position: relative;
+    padding: 0;
+    background-position: cover;
+    text-transform: uppercase;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    z-index: 2; }
+    .main-login-page .button.button-signin, .main-login-page .button-signin.button, .signup-page .button.button-signin, .signup-page .button-signin.button {
+      text-align: center;
+      margin-bottom: 15px; }
+    .main-login-page .button.button-facebook, .main-login-page .button-facebook.button, .signup-page .button.button-facebook, .signup-page .button-facebook.button {
+      padding: 0 0 0 12%; }
+      .main-login-page .button.button-facebook:before, .main-login-page .button-facebook.button:before, .signup-page .button.button-facebook:before, .signup-page .button-facebook.button:before {
+        content: "";
+        width: 20%;
+        height: 100%;
+        display: block;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.5);
+        background: #2a4670; }
+      .main-login-page .button.button-facebook:after, .main-login-page .button-facebook.button:after, .signup-page .button.button-facebook:after, .signup-page .button-facebook.button:after {
+        content: "";
+        background: url('../img/social-facebook.png');
+        width: 25px;
+        height: 25px;
+        display: block;
+        background-repeat: no-repeat;
+        top: 25%;
+        position: absolute;
+        background-position: center;
+        margin: 0 0 0 9%;
+        background-size: contain;
+        opacity: 0.3; }
+    .main-login-page .button.button-twitter, .main-login-page .button-twitter.button, .signup-page .button.button-twitter, .signup-page .button-twitter.button {
+      padding: 0 0 0 12%; }
+      .main-login-page .button.button-twitter:before, .main-login-page .button-twitter.button:before, .signup-page .button.button-twitter:before, .signup-page .button-twitter.button:before {
+        content: "";
+        width: 20%;
+        height: 100%;
+        display: block;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.5);
+        background: #319bea; }
+      .main-login-page .button.button-twitter:after, .main-login-page .button-twitter.button:after, .signup-page .button.button-twitter:after, .signup-page .button-twitter.button:after {
+        content: "";
+        background: url('../img/social-twitter.png');
+        width: 25px;
+        height: 25px;
+        display: block;
+        background-repeat: no-repeat;
+        top: 25%;
+        position: absolute;
+        background-position: center;
+        margin: 0 0 0 9%;
+        background-size: contain;
+        opacity: 0.3; }
+    .main-login-page .button.button-google, .main-login-page .button-google.button, .signup-page .button.button-google, .signup-page .button-google.button {
+      padding: 0 0 0 12%; }
+      .main-login-page .button.button-google:before, .main-login-page .button-google.button:before, .signup-page .button.button-google:before, .signup-page .button-google.button:before {
+        content: "";
+        width: 20%;
+        height: 100%;
+        display: block;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.5);
+        background: #b53721; }
+      .main-login-page .button.button-google:after, .main-login-page .button-google.button:after, .signup-page .button.button-google:after, .signup-page .button-google.button:after {
+        content: "";
+        background: url('../img/social-google-plus.png');
+        width: 30px;
+        height: 30px;
+        display: block;
+        background-repeat: no-repeat;
+        top: 25%;
+        position: absolute;
+        background-position: center;
+        margin: 0 0 0 9%;
+        background-size: contain;
+        opacity: 0.3; }
+#cardQr svg{
+  height:300px;
+  width:100%;
+}
+.menu-left .bar-header h1{
+  color: #FFF !important; 
+}
+.menu-left .item-content{
+  color: #FFF;
+}
+.menu-left .list .item{
+  border-style:none;
+}
+.cardItem{
+  padding:2px;
+}
+.searchPartnerList{
+  margin-bottom:5px;
+  background-color: #ef473a;
+}
+.row{
+  flex-wrap: wrap;
+}
+.list:last-child.card{
+  margin: 2px;
+}
+.OneCardMenu .list{
+  margin-top: 100px;
+}
+.menuFont{
+  vertical-align:top;margin-left:10px;margin-top:10px;
+}
+.bar.bar-assertive,
+.menu-left, .menu-left .bar-header,
+.menu-left .item-content,
+.menu-left .bar-header,
+.tabs-background-assertive .tabs, .tabs-background-assertive > .tabs,
+.badge-assertive
+{
+  
+  background-color: #AF141B !important;
+  border-color: #AF141B;
+}
+.menu-left .bar-header{
+  border-color: darkred;
+}
+.assertive_bg{
+  background-color: #AF141B !important;
+}
+.button.button-assertive{
+  background-color: #673882;
+  border-color: #673882;
+}
+.assertive{
+  color: #AF141B;
+}
+.OneCardMenu .list .item-content{
+  text-align: left;
+  padding-left:70px;
+}
+.menu-left .bar-header{
+  height:120px;
+}
+.onecardlogo {
+  animation: flyin 1.2s ease forwards;
+  opacity: 0;
+  transform: scale(2);
+  filter: blur(4px);
+}
+
+@keyframes flyin {
+   to { 
+     filter: blur(0);
+     transform: scale(1);
+     opacity: 1;
+   }
+}

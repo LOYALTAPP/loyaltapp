@@ -1,0 +1,40 @@
+<ion-view show-back-button="true" view-title="Deals">
+  <ion-header-bar class="bar-royal bar-subheader">
+        <input type="text" style="width:100%;padding-left:10px;border-radius:5px" placeholder="Search Deals...">
+  </ion-header-bar>
+  <ion-content>
+    
+    <!--<div class="list searchPartnerList padding">
+        <label class="item item-input">
+          <i class="icon ion-search assertive placeholder-icon"></i>
+          <input type="text" placeholder="Enter name to search">
+        </label>
+    </div>-->
+    <!--<div class="list">
+      <a class="item cardItem" ng-repeat="partner in partners" style="max-height:200px;width:100%">
+        <!--<span style="position:absolute; right:20px;font-weight:bold;background-color:#ef473a;padding:5px;color:#FFF">this is span</span>
+        <img src="{{partner.source}}" style="max-height:200px;width:100%" />
+        <span style="position:absolute; left:20px;font-weight:bold;bottom:10px;padding:5px;color:#FFF">{{partner.title}}</span>
+      </a>  
+    </div>-->
+    <div class="row responsive-sm">
+      <div class="col col-33" style="padding:0px" ng-repeat="partner in partners">
+        <div class="list card">
+          <!--<div class="item">
+            <h2>{{ partner.title }}</h2>
+          </div>-->
+          <div class="item item-image">
+            <a class="assertive" href="#/app/partners/partnerDetails/{{partner.id}}">
+              <img style="height:200px;width:100%" src="{{partner.source}}">
+              <span style="position:absolute; left:20px;font-weight:bold;font-size:20px;bottom:10px;padding:5px;color:#FFF">{{partner.title}}</span>
+            </a>
+          </div>
+          <!--<a class="item item-icon-left assertive" href="#">
+            <i class="icon ion-ios-paper-outline"></i>
+            Find out more
+          </a>-->
+        </div>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>

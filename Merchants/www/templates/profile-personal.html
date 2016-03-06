@@ -1,0 +1,29 @@
+<ion-view view-title="Personal">
+  <ion-content>
+    <div class="list">
+		<label class="item item-input">
+			<span class="input-label royal">Username / Email</span>
+			<input type="text" placeholder="Your username/emailid" ng-model="user.email">
+		</label>
+		<label class="item item-input">
+			<span class="input-label royal">Name</span>
+			<input type="text" placeholder="Your name" ng-model="user.name">
+		</label>
+		<label class="item item-input">
+			<span class="input-label royal">Addreses</span>
+			<textarea style="width:70%" cols="10" rows="5" placeholder="Your address" ng-model="user.address" ></textarea>
+		</label>
+		<label class="item item-input">
+			<span class="input-label royal">Mobile</span>
+			<textarea style="width:70%" cols="10" rows="5" placeholder="Your mobile number" ng-model="user.mobile" ></textarea>
+		</label>
+		<label class="item item-input">
+			<span class="input-label royal">Land Line</span>
+			<textarea style="width:70%" cols="10" rows="5" placeholder="Your Land line number" ng-model="user.landline" ></textarea>
+		</label>
+		<div class="padding">
+		<Button class="button button-assertive button-block">Save</Button>
+		</div>
+	</div>
+  </ion-content>
+</ion-view>

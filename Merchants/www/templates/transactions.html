@@ -1,0 +1,10 @@
+<ion-view view-title="History">
+  <ion-content>
+    <ion-list>
+      <ion-item ng-repeat="trans in userTransactions" href="#/app/cardhome/transaction/{{trans.id}}">
+        {{trans.title}} - {{trans.area}}
+        <span class="badge badge-royal">{{trans.balance}} points</span>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

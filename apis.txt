@@ -1,0 +1,25 @@
+Merchants : 
+1. Profile / points : 
+	- This page will be used to have a maping of the points and ruppes for that merchant.
+		- Rupees to points : Here merchant will enter mapping of rupees to points, so 100 rupees equals to 1 point for the users. e.g if user gets a bill of 100 rupees, 1 point will be added to his/her card
+		- points to rupees : Here merchant will enter mapping of points to rupees, so 100 points equal to 1 rupee for redemtion for users. e.g if user has 100 points then he/she can redeem those for 1 rupee.
+	- API : Savepoints({rpmap : {rupee, point}, prmap : { point, rupee}}) - save it to merchant database along with the history table and date that was updated.
+
+2. Profile / personal : 
+	- This page will be used to save the personal details of the merchant like email, name, address, photos if any, mobile and landline numbers.
+	- API : SavePersonal()
+
+3. Scan : 
+	- This page will be used when a merchant wants to scan the card of the user, while doing the transaction. After scanning, the merchants will see the details of the user like user email, name and balance. Merchant will also see an option to add / redeem points. So if the user has done a transaction of 500 rupees, if merchant selects add, then depending on the profile / points, those many points will be added/credited to the users account. If the merchant selects redeem, then depending on the amount the merchant 
+	- API : 
+		- Scan({userinfo : encodedstring}) - This method will take the userinfo, decode it, extract the user id from that and the fetch the details like : user email, name and balance. 
+		- UpdateCard({action: addOrRedeem, amount: 
+
+
+Merchants : 
+1. Users : name, email, address, phone, authType(gmail, facebook), mobile,
+2. Merchants : name, email, address, phone, mobile, locality, latitude, longitude, 
+2. MerchantPointsProfile : email, rupeeToPoint , pointtorupee
+3. UserPoints : email, points
+4. userTransaction : useremail, username, TotalPoints, locality, merchantName, merchantEmail, 
+5. userTransactionDetails : date, addedOrRedeemed, points

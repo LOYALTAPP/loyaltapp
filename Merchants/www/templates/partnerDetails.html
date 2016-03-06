@@ -1,0 +1,30 @@
+<ion-view view-title="{{selectedPartner.title}}">
+  <ion-content>
+    <div class="list">
+		<label class="item item-input">
+			<span class="input-label assertive">Name</span>
+			{{selectedPartner.title}}
+		</label>
+		<label class="item item-input">
+			<span class="input-label assertive">Id</span>
+			{{selectedPartner.id}}
+		</label>
+		<label class="item item-input">
+			<span class="input-label assertive">Phone</span>
+			<a href="tel:{{selectedPartner.phone}}">Call Me!!</a>
+		</label>
+		<label class="item item-input">
+			<span class="input-label assertive">Map</span>
+			<a href="#">View on Map</a>
+		</label>
+		<label class="item item-input">
+			<span class="input-label assertive">Address</span>
+			{{selectedPartner.address}}
+		</label>
+		<label class="item item-input">
+			<span class="input-label assertive">Area</span>
+			{{selectedPartner.area}}
+		</label>
+	</div>
+  </ion-content>
+</ion-view>
